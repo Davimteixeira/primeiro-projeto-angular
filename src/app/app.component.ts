@@ -1,22 +1,20 @@
-import { Component, OnChanges, OnInit} from '@angular/core';
+import { Component,OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   template: `
-  <app-title title="olá mundo"></app-title>
+  <!-- <app-diretivas-estruturais></app-diretivas-estruturais> -->
+  <!-- <app-data-biding></app-data-biding> -->
+  <app-diretivas-atributos>
+    <h1>Aulas De Diretivas de atributos</h1>
+    <hr>
+  </app-diretivas-atributos>
   <router-outlet></router-outlet>`
 })
-export class AppComponent implements OnInit, OnChanges{
+export class AppComponent implements OnInit{
+
   constructor() {}
 
-  ngOnInit(): void {
-    // setTimeout( ()=> {
-    //   console.log(1);
-    // }, 5000)
-  }
+  ngOnInit(): void {}
 
-
-  ngOnChanges(): void {
-
-  }
 }

@@ -1,0 +1,33 @@
+<ng-content select="h1"></ng-content>
+<p [ngClass]="'active'">NgClass</p>
+<p [ngClass]="{'active': valor, 'disabled': !valor}">NgClass</p>
+
+<hr>
+<h2>ngStyle</h2>
+<p [ngStyle]="{'height': heightPx,'background': backgroundColor}">NgStyle</p>
+
+<hr>
+
+<h2>ngModel</h2>
+<input [(ngModel)]="nome"> {{nome}}
+<button (click)="salvar()">Salvar</button>
+
+<li *ngFor="let item of list">{{item.nome}}</li>
+
+<hr>
+<h2>ng-template</h2>
+
+<ng-template ngFor let-item [ngForOf]="list">
+  <p>
+    {{item.nome}}
+  </p>
+</ng-template>
+
+<input [(ngModel)]="nome"> {{nome}}
+<button (click)="salvar()">Salvar</button>
+
+
+<hr>
+<h2>ngContent</h2>
+
+<ng-content select="hr"></ng-content>
