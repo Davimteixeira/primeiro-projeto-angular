@@ -1,4 +1,4 @@
-<ng-content select="h1"></ng-content>
+<!-- <ng-content select="h1"></ng-content>
 <p [ngClass]="'active'">NgClass</p>
 <p [ngClass]="{'active': valor, 'disabled': !valor}">NgClass</p>
 
@@ -30,4 +30,14 @@
 <hr>
 <h2>ngContent</h2>
 
-<ng-content select="hr"></ng-content>
+<ng-content select="h3"></ng-content> -->
+
+<hr>
+<h2>Pipes</h2>
+<!--
+<input [(ngModel)]="nome"> {{nome}}
+<button (click)="salvar()">Salvar</button>
+
+<li *ngFor="let item of list">{{item.nome | uppercase}}</li> -->
+
+{{date | date:'dd/MM/yyyy'}}
